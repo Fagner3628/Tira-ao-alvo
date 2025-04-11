@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiro ao Alvo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="start-screen">
+        <h1 class="game-title">Tiro ao Alvo</h1>
+        <div class="welcome-message">
+            <p>Bem-vindo ao jogo que vai testar seus reflexos,</p>
+            <p>espero que goste e volte sempre.</p>
+        </div>
+        <button id="start-btn">Começar Jogo</button>
+    </div>
+    <div id="game-container" class="hidden">
+        <img id="target" src="target-logo.png" alt="Alvo">
+        <div id="score">Pontuação: 0</div>
+        <div id="timer">Tempo: 01:00</div>
+    </div>
+    <div id="end-screen" class="hidden">
+        <h2>Parabéns por jogar!</h2>
+        <p id="final-score">Sua pontuação: 0</p>
+        <p class="credits">Feito por Shoft</p>
+        <button id="restart-btn">Jogar Novamente</button>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #0a0a0a;
+    font-family: 'Arial', sans-serif;
+}
+
+#start-screen {
+    text-align: center;
+}
+
+.game-title {
+    font-size: 48px;
+    color: #ff00ff;
+    text-shadow: 0 0 10px #ff00ff;
+    margin-bottom: 20px;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.welcome-message {
+    color: #00ffff;
+    text-shadow: 0 0 5px #00ffff;
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+#start-btn {
+    padding: 15px 30px;
+    font-size: 20px;
+    background: #ff00ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #ff00ff;
+}
+
+#game-container {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    background-color: #111;
+    border: 2px solid #00ffff;
+    overflow: hidden;
+    box-shadow: 0 0 20px #00ffff;
+}
+
+#target {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+    filter: drop-shadow(0 0 5px #ff0000);
+    display: none;
+}
+
+#score, #timer {
+    position: absolute;
+    font-size: 20px;
+    color: #00ffff;
+    text-shadow: 0 0 5px #00ffff;
+}
+
+#score {
+    top: 10px;
+    left: 10px;
+}
+
+#timer {
+    top: 10px;
+    right: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+#end-screen {
+    text-align: center;
+    color: #00ffff;
+    text-shadow: 0 0 5px #00ffff;
+}
+
+#end-screen h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#final-score {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.credits {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #ff00ff;
+}
+
+#restart-btn {
+    padding: 15px 30px;
+    font-size: 20px;
+    background: #ff00ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #ff00ff;
+}
